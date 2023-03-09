@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211 131">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #64bbc6;
+        font-family: AdageScriptJF, AdageScriptJF;
+        font-size: 36px;
+      }
+
+      .cls-2 {
+        fill: #ec8ea2;
+        font-family: BodoniSvtyTwoITCTT-Book, 'Bodoni 72';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(61.65 69.25)"><tspan x="0" y="0">ML</tspan></text>
+  <text class="cls-1" transform="translate(14.69 105.38)"><tspan x="0" y="0">madeleine leahy</tspan></text>
+</svg>
