@@ -41,3 +41,124 @@
     font-family: 'Dancing Script', cursive;
     font-family: 'PT Serif', serif;
     font-family: 'Shadows Into Light', cursive;}
+
+/*#gallery {
+    display: grid;
+    grid-template-areas:
+     "div quote div1 "
+     "div2 div3 div4";
+     grid-template-rows: 30% 40% 20% 10%;
+     grid-template-columns: 500px 400px 800px;
+
+}
+#gallery>div {
+ padding: 40px;
+ height: 300px;
+ width: 400px;
+ 
+}*/
+.gallery {
+    background-color: #f8dce2;
+
+}
+.ab {
+ grid-area: div;
+ border: black solid;
+}
+.cd {
+    grid-area: quote;
+    border: #4ab6c5 solid;
+   
+}
+.ef {
+    grid-area: div1;
+}
+/*responsive*/
+#gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
