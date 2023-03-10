@@ -61,18 +61,7 @@
     background-color: #f8dce2;
 
 }
-.ab {
- grid-area: div;
- border: black solid;
-}
-.cd {
-    grid-area: quote;
-    border: #4ab6c5 solid;
-   
-}
-.ef {
-    grid-area: div1;
-}
+
 /*responsive*/
 #gallery {
     border: 1px solid #ccc;
@@ -87,9 +76,7 @@
     height: auto;
   }
   
-  div.gallery {
-    border: 1px solid #ccc;
-  }
+
   
   div.gallery:hover {
     border: 1px solid #777;
