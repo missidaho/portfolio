@@ -31,16 +31,14 @@
     padding-left: 3pc;
     flex-direction: column;
     padding-top: 5em;
+    font-family: 'Bodoni Moda';
 }
 .herotitle {
     color: #4ab6c5;
 }
 .body {
     font-family: 'Bodoni Moda', serif;
-    font-family: 'Caveat', cursive;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'PT Serif', serif;
-    font-family: 'Shadows Into Light', cursive;}
+   }
 
 /*#gallery {
     display: grid;

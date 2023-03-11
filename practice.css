@@ -1,0 +1,58 @@
+.nav {
+    display: flex; 
+    align-items: center;
+    background-color: rgb(223, 247, 247);
+    list-style: none;
+    align-content: space-between;
+   justify-content: center;
+   padding-top: none;
+   width: 100%;
+   margin-top: 0;
+     
+ }
+ .nav-link {
+    padding: 4em;
+}
+.hero {
+    display: flex;
+    padding: 70px;
+}
+.herotext {
+    display: flex;
+    padding-left: 3pc;
+    flex-direction: column;
+    padding-top: 5em;
+    font-family: 'Bodoni Moda';
+}
+.herotitle {
+    color: #4ab6c5;
+}
+.body {
+    font-family: 'Bodoni Moda', serif;
+   }
+
+.gallery {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 30.5% 30.5% 30.5%;
+    grid-template-areas: 
+    "Picture1 Hobby Picture"
+    "Picture2 Squote Picture3"
+    "designs Picture4 Portfolio"
+    "Picture5 Collection";
+    margin: 20px;
+}
+.gallerystyle {
+    background-color: #f8dce2;
+    margin: 5px;
+    
+}
+#pic1 {
+    grid-area: Picture1;
+}
+/*#hobby {
+    grid-area: Hobby;
+}
+#pic2 {
+
+}
