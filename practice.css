@@ -4,10 +4,10 @@
     background-color: rgb(223, 247, 247);
     list-style: none;
     align-content: space-between;
-   justify-content: center;
-   padding-top: none;
-   width: 100%;
-   margin-top: 0;
+    justify-content: center;
+    padding-top: none;
+    width: 100%;
+    margin: 0;
      
  }
  .nav-link {
@@ -29,9 +29,10 @@
 }
 .body {
     font-family: 'Bodoni Moda', serif;
+    overflow: hidden;
    }
 
-.gallery {
+.container {
     display: flex;
     /*grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: 40% 30% 20% 20%;
@@ -42,19 +43,52 @@
     "Collection Collection Collection";
     margin: 20px;
     padding-left: 100px;*/
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
     padding-left: 80px;
     flex-shrink: 1;
+    flex: 1 1 auto;
+  
+  
    
     
+}
+.container>div {
+    display: flex;
+   
 }
 .gallerystyle {
     background-color: #f8dce2;
     height: 200px;
     width: 300px;
+    display: grid;
+    
+}
+.footer {
+    display: block;
+    background-color: rgb(223, 247, 247);
+    height: 80px;
+    width: 100vw;
+    margin-top: 60px;
+    
+}
+.social {
     display: flex;
-      
+
+    justify-content: space-around;
+   
+
+}
+.social>div {
+    background-color: #f8dce2;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+
+}
+.Follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
 }

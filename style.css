@@ -40,13 +40,9 @@
     font-family: 'Bodoni Moda', serif;
    }
 
-/*#gallery {
+#gallery {
     display: grid;
-    grid-template-areas:
-     "div quote div1 "
-     "div2 div3 div4";
-     grid-template-rows: 30% 40% 20% 10%;
-     grid-template-columns: 500px 400px 800px;
+    grid-auto-flow: dense rows;
 
 }
 #gallery>div {
@@ -54,14 +50,14 @@
  height: 300px;
  width: 400px;
  
-}*/
+}
 .gallery {
     background-color: #f8dce2;
 
 }
 
 /*responsive*/
-#gallery {
+/*#gallery {
     border: 1px solid #ccc;
   }
   
