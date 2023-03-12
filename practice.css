@@ -32,27 +32,29 @@
    }
 
 .gallery {
-    display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 30.5% 30.5% 30.5%;
+    display: flex;
+    /*grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 40% 30% 20% 20%;
     grid-template-areas: 
     "Picture1 Hobby Picture"
     "Picture2 Squote Picture3"
     "designs Picture4 Portfolio"
-    "Picture5 Collection";
+    "Collection Collection Collection";
     margin: 20px;
+    padding-left: 100px;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 80px;
+    flex-shrink: 1;
+   
+    
 }
 .gallerystyle {
     background-color: #f8dce2;
-    margin: 5px;
-    
-}
-#pic1 {
-    grid-area: Picture1;
-}
-/*#hobby {
-    grid-area: Hobby;
-}
-#pic2 {
-
+    height: 200px;
+    width: 300px;
+    display: flex;
+      
 }
