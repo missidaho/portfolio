@@ -74,8 +74,12 @@
 }
 .social {
     display: flex;
-
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 102px;
+    width: 1077px;
+    height: 202px;
    
 
 }
