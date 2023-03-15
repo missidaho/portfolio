@@ -1,0 +1,54 @@
+.nav {
+    margin: 0 auto;
+    width: 1170px;
+
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.nav ul li {
+float: none;
+display: inline-block;
+margin-top: 50px;
+position: relative;
+}
+.nav ul li:nth-child(1){
+   float: left;
+    }
+
+.nav ul li:nth-child(2){
+        float: left;
+         }
+
+.nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color:rgb(249, 41, 166);
+}
+
+.nav ul li ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    
+} 
+.logo_area {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    content: '';
+  
+}
+#main_menu {
+    width: 100%;
+    position: relative;
+}
