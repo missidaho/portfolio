@@ -9,11 +9,16 @@
     margin: 0;
     overflow: hidden;
     margin-top: 0%;
+  
  
      
  }
+ .nav-item {
+    padding: 5px;
+    margin: 25px;
+ }
  .nav-link {
-    padding: 4em;
+    padding: 40%;
 }
 .hero {
     display: flex;
@@ -37,24 +42,10 @@
 
 .container {
     display: flex;
-    /*grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 40% 30% 20% 20%;
-    grid-template-areas: 
-    "Picture1 Hobby Picture"
-    "Picture2 Squote Picture3"
-    "designs Picture4 Portfolio"
-    "Collection Collection Collection";
-    margin: 20px;
-    padding-left: 100px;*/
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 80px;
-    flex-shrink: 1;
-    flex: 1 1 auto;
-  
-  
-   
-    
+    flex: auto;  
+    justify-content: center;
 }
 .container>div {
     display: flex;
@@ -64,7 +55,7 @@
     background-color: #f8dce2;
     height: 200px;
     width: 300px;
-    display: grid;
+
     
 }
 .footer {
@@ -81,8 +72,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 102px;
-    width: 1077px;
-    height: 202px;
+    padding-bottom: 100px;
    
 
 }
@@ -98,8 +88,35 @@
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 200px;
+    
 }
 
+  
+@media only screen and (max-width: 1090px) {
+        /* For mobile phones: */
+        .social {
+          width: 100%;
+          display: block;
+        }
+        #logo {
+            float: left;
+            width: fit-content;
+        }
+        .social>div {
+            width: auto;
+            margin: 20px;
+           
+        }
+       
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+@media only screen (max-width: 1502px) {
+    .lastpic {
+        flex-grow: 
+    }
 
-
+}
