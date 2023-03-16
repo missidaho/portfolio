@@ -17,9 +17,7 @@
     padding: 5px;
     margin: 25px;
  }
- .nav-link {
-    padding: 40%;
-}
+
 .hero {
     display: flex;
     padding: 70px;
@@ -36,8 +34,7 @@
 }
 .body {
     font-family: 'Bodoni Moda', serif;
-    overflow: hidden;
-    margin: 0;
+    margin: 0%;
    }
 
 .container {
@@ -73,8 +70,6 @@
     padding: 0px;
     gap: 102px;
     padding-bottom: 100px;
-   
-
 }
 .social>div {
     background-color: #f8dce2;
@@ -92,7 +87,7 @@
 }
 
   
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1131px) {
         /* For mobile phones: */
         .social {
           width: 100%;
@@ -114,9 +109,35 @@
       flex-direction: column;
     }
   }
-@media only screen (max-width: 1502px) {
+@media (max-width: 1502px) {
     .lastpic {
-        flex-grow: 
+        flex-grow: 1 auto;
+        width: auto;
+    }
+
+}
+@media (max-width:1516px) {
+    .container {
+        flex-shrink: 4;
+       
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .herotext {
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    .herop {
+       padding-left: 23px;
+      
     }
 
 }
