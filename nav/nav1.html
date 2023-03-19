@@ -3,29 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav1.css"> 
+
     <title>Document</title>
-    <link rel="stylesheet" href="nav1.css">
 </head>
 <body>
-    <div id="main_menu">
-        <div class="logo_area">
-          <a href="">
-            <img src="/pics/Untitled-1-03.svg" height="150px" alt="">
-          </a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">More</a>
-               
-            </li>
-            </ul>
-        </div>
-    </div>
+    <!-- <div class="body">
+    <div><ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul> -->
+         <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            
+            <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <div class="nav-item" id="logo">
+                    <img src="/pics/Untitled-1-03.svg" alt="ML logo" height="200px">
+                </div>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contacts</a></li>
 
-    
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

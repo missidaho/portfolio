@@ -1,68 +1,125 @@
 .nav {
-    margin: 0 auto;
-    width: 1170px;
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    align-content: space-between;
+    justify-content: center;
+    margin: 0;
+    margin-top: 0%;   
+ }
+
+.logo_area {
+    width: 100px;
+    height: 100px;
+    content: '';
+}
+
+a{
+text-decoration: none;
+}
+ul{
+list-style: none;
+display: flex;
+padding: 20px;
+margin: 20px;
 
 }
-.nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
+ul>li {
+    margin: 10px;
+    padding: 5px;
 }
-.nav ul li {
-float: none;
-display: inline-block;
-margin-top: 50px;
-position: relative;
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
-.nav ul li:nth-child(1){
-   float: left;
+.nav{
+    height: 100%;
+    background-color: rgb(219, 246, 248);
+    overflow: hidden;
+
+}
+.menu {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.menu a:hover{
+    background-color: rgb(255, 223, 229);
+}
+.nav{
+    max-height: 50px;
+  
+}
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: plum;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: plum;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: solid plum;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+    }
+    .menu li{
+        float: center;
+    }
+    .menu a:hover{
+        background-color: transparent;
+   
+
     }
 
-.nav ul li:nth-child(2){
-        float: left;
-         }
-
-.nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-.nav ul li a:hover{
-    color:rgb(249, 41, 166);
-}
-
-.nav ul li ul {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 200px;
-    background-color: aliceblue;
-  
-
-} 
-.nav ul li ul li {
-  float: left;
-  padding: 0;
-  width: 100%;
-  text-align: left;
-} 
-.nav ul li ul li a {
-    color: rgb(35, 47, 219);
-  } 
-.nav ul li ul li a:hover {
-   background-color: rgb(221, 241, 246);
-  } 
-.logo_area {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 40%;
-    top: 0;
-    content: '';
-  
-}
-#main_menu {
-    width: 100%;
-    position: relative;
+    .hamb{
+        display: none;
+    }
 }
