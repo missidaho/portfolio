@@ -47,11 +47,12 @@ body {
 .footer {
     display: block;
     background-color: rgb(223, 247, 247);
-    height: 80px;
+    height: auto;
     width: 100vw;
     margin-top: 60px;
     
 }
+
 .social {
     display: flex;
     flex-direction: row;
@@ -69,6 +70,11 @@ body {
     box-shadow: 5px 5px 2px rgb(218, 218, 218);
 
 }
+.socialicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Follow {
     display: flex;
     flex-direction: column;
@@ -80,9 +86,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-size: large;
     color: #ffa6b9;
+}
+.Copyright {
+    margin: 5px;
+    padding: 10px;
+    margin-top: 14px;
+
+}
+.copyR {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -390,13 +407,16 @@ max-width: 380  */
     /* For mobile phones:  */
     .social {
       width: 60%;
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   
     }
     .social>div {
         width: 300px;
         margin: 20px;
+        justify-content: center;
+        align-self: center;
        
     }
 
