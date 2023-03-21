@@ -40,9 +40,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: larger;
-   
-    
+    font-size: larger;  
+}
+.gallerystyle a:hover {
+    background-color:  rgb(221, 249, 251);
+    border-radius: 20px;
+    padding: 8px;
 }
 .footer {
     display: block;
@@ -154,8 +157,10 @@ ul>li {
     justify-content: center;
     align-content: center;
 }
-.menu a:hover{
-    background-color: rgb(255, 223, 229);
+.menu li a:hover{
+    background-color:  rgb(221, 249, 251);
+    border-radius: 20px;
+    padding: 8px;
 }
 .nav{
     max-height: 70px;
@@ -293,10 +298,6 @@ max-width: 380 */
     .menu li{
         float: center;
     }
-    .menu a:hover{
-        background-color: transparent;
-   
-    }
 
 
     .hamb{
@@ -332,6 +333,9 @@ max-width: 380 */
     }
     .mobilelogo {
         display: none;
+    }
+    #logo {
+        width: 300px;
     }
 }
 @media (max-width: 894px) {
