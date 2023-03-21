@@ -42,8 +42,6 @@ body {
     align-items: center;
     font-size: larger;
    
-
-
     
 }
 .footer {
@@ -78,25 +76,13 @@ body {
     padding-top: 100px;
     
 }
-
-  
-@media only screen and (max-width: 1131px) {
-        /* For mobile phones: */
-        .social {
-          width: 60%;
-          display: block;
-        }
-        #logo {
-            float: left;
-            width: fit-content;
-        }
-        .social>div {
-            width: auto;
-            margin: 20px;
-           
-        }
-   
-       
+.pinfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+    color: #ffa6b9;
 }
 
 
@@ -117,12 +103,12 @@ text-decoration: none;
 ul{
 list-style: none;
 display: flex;
-padding: 25px;
+padding: 30px;
 margin: 20px;
 align-items: center;
 align-content: space-between;
-
 }
+
 ul>li {
     margin: 20px;
     padding: 5px;
@@ -217,9 +203,7 @@ ul>li {
 /* Responsiveness */
 /* desktop 
 min-width 780 */
-@media (min-width) {
-    
-}
+
 
 /* tablet
 max-width: 780 
@@ -229,7 +213,135 @@ min-width: 381
 /* mobile
 max-width: 380 */
 
+<<<<<<< Updated upstream
 /* 
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+=======
+>>>>>>> Stashed changes
+
+@media (max-width: 1502px) {
+    .lastpic {
+        flex-grow: 1 auto;
+        width: auto;
+    }
+
+}
+@media (max-width:1516px) {
+    .container {
+        flex-shrink: 4;
+        width: 100%;
+    }
+     .container {
+            background-color: #f8dce2;
+            height: fit-content;
+            border: solid 1px  #ffff;
+        }
+}
+@media (max-width: 800px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .herotext {
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    .herop {
+       padding-left: 23px;
+      
+    }
+    .flex-container {
+        flex-direction: column;
+      }
+
+}
+@media (max-width: 916px) {
+    .container {
+        background-color: white;
+    } 
+    
+<<<<<<< Updated upstream
+ } */
+/* @media (min-width: 768px) {
+=======
+ } 
+@media  (min-width: 768px) {
+>>>>>>> Stashed changes
+    .nav{
+        max-height: none;
+    }
+    .menu li{
+        float: center;
+    }
+    .menu a:hover{
+        background-color: transparent;
+   
+    }
+
+
+    .hamb{
+        display: none;
+    }
+    .logo_area {
+        height: 100px;
+        width: 100px;
+    }
+} 
+@media (max-width:768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    ul>li {
+        font-size: 16px;
+    }
+    .logo_area {
+      display: none;
+    }
+    #logo {
+        order: -1;
+    }
+ 
+
+    
+    
+}
+@media (max-width: 2200px) {
+    .container {
+        background-color: #f8dce2;
+    }
+    /* .mobilelogo {
+        display: none;
+    } */
+/* }
+@media (max-width: 894px) {
+    .container {
+        background-color: #ffff;
+    }
+    
+<<<<<<< Updated upstream
+}  */
+=======
+} 
+/* desktop 
+min-width 780 */
+
+/* tablet
+max-width: 780 
+min-width: 381
+*/
+
+/* mobile
+max-width: 380 */
+
+
 @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
@@ -275,61 +387,20 @@ max-width: 380 */
 @media (max-width: 916px) {
     .container {
         background-color: white;
-    } 
-    
- } */
-/* @media (min-width: 768px) {
-    .nav{
-        max-height: none;
     }
-    .menu li{
-        float: center;
-    }
-    .menu a:hover{
-        background-color: transparent;
-   
-
-    }
-
-    .hamb{
-        display: none;
-    }
-    .logo_area {
-        height: 100px;
-        width: 100px;
+}
+@media  (max-width: 1131px) {
+    /* For mobile phones: */
+    .social {
+      width: 60%;
+      display: block;
     }
   
-}
-@media (max-width:768px) {
-    .menu {
-        display: flex;
-        flex-direction: column;
     }
-    ul>li {
-        font-size: 16px;
+    .social>div {
+        width: auto;
+        margin: 20px;
+       
     }
-    .logo_area {
-      display: none;
-    }
-    #logo {
-        order: -1;
-    }
- 
 
-    
-    
-}
-@media (max-width: 2200px) {
-    .container {
-        background-color: #f8dce2;
-    }
-    /* .mobilelogo {
-        display: none;
-    } */
-/* }
-@media (max-width: 894px) {
-    .container {
-        background-color: #ffff;
-    }
-    
-}  */
+>>>>>>> Stashed changes
