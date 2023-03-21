@@ -1,22 +1,4 @@
-/* .nav {
-    display: flex; 
-    align-items: center;
-    background-color: rgb(223, 247, 247);
-    list-style: none;
-    align-content: space-between;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    margin-top: 0%;
-  
- 
-     
- }
- .nav-item {
-    padding: 5px;
-    margin: 25px;
- } */
+
 
 .hero {
     display: flex;
