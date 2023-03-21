@@ -63,7 +63,7 @@ body {
 .social>div {
     background-color: #f8dce2;
     height: 200px;
-    width: 300px;
+    width: 500px;
     margin: 10px;
     border-radius: 25px;
     box-shadow: 5px 5px 2px rgb(218, 218, 218);
@@ -213,15 +213,14 @@ min-width: 381
 /* mobile
 max-width: 380 */
 
-<<<<<<< Updated upstream
-/* 
+
 @media (max-width: 800px) {
     .flex-container {
       flex-direction: column;
     }
   }
-=======
->>>>>>> Stashed changes
+
+
 
 @media (max-width: 1502px) {
     .lastpic {
@@ -267,13 +266,10 @@ max-width: 380 */
         background-color: white;
     } 
     
-<<<<<<< Updated upstream
- } */
-/* @media (min-width: 768px) {
-=======
+
  } 
 @media  (min-width: 768px) {
->>>>>>> Stashed changes
+
     .nav{
         max-height: none;
     }
@@ -317,19 +313,17 @@ max-width: 380 */
     .container {
         background-color: #f8dce2;
     }
-    /* .mobilelogo {
+    .mobilelogo {
         display: none;
-    } */
-/* }
+    }
+}
 @media (max-width: 894px) {
     .container {
         background-color: #ffff;
     }
     
-<<<<<<< Updated upstream
-}  */
-=======
-} 
+
+}  
 /* desktop 
 min-width 780 */
 
@@ -338,8 +332,8 @@ max-width: 780
 min-width: 381
 */
 
-/* mobile
-max-width: 380 */
+ /* mobile
+max-width: 380  */
 
 
 @media (max-width: 800px) {
@@ -365,6 +359,9 @@ max-width: 380 */
             height: fit-content;
             border: solid 1px  #ffff;
         }
+    .social>div {
+        width: 60%;
+    }
 }
 @media (max-width: 800px) {
     .hero {
@@ -390,7 +387,7 @@ max-width: 380 */
     }
 }
 @media  (max-width: 1131px) {
-    /* For mobile phones: */
+    /* For mobile phones:  */
     .social {
       width: 60%;
       display: block;
@@ -398,9 +395,9 @@ max-width: 380 */
   
     }
     .social>div {
-        width: auto;
+        width: 300px;
         margin: 20px;
        
     }
 
->>>>>>> Stashed changes
+
