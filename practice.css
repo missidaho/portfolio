@@ -14,7 +14,7 @@
 .herotitle {
     color: #4ab6c5;
 }
-.body {
+body {
     font-family: 'Bodoni Moda', serif;
     margin: 0%;
    }
@@ -67,6 +67,8 @@
     height: 200px;
     width: 300px;
     margin: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px rgb(218, 218, 218);
 
 }
 .Follow {
@@ -81,7 +83,7 @@
 @media only screen and (max-width: 1131px) {
         /* For mobile phones: */
         .social {
-          width: 100%;
+          width: 60%;
           display: block;
         }
         #logo {
@@ -96,53 +98,8 @@
    
        
 }
-@media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-@media (max-width: 1502px) {
-    .lastpic {
-        flex-grow: 1 auto;
-        width: auto;
-    }
 
-}
-@media (max-width:1516px) {
-    .container {
-        flex-shrink: 4;
-        width: 100%;
-    }
-     .container {
-            background-color: #f8dce2;
-            height: fit-content;
-            border: solid 1px  #ffff;
-        }
-}
-@media (max-width: 800px) {
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    .herotext {
-        align-items: center;
-        padding-left: 0%;
-    }
 
-    .herop {
-       padding-left: 23px;
-      
-    }
-
-}
-@media (max-width: 916px) {
-    .container {
-        background-color: white;
-    }
-    
-}
 /* Nav */
 .nav {
     display: flex; 
@@ -171,6 +128,10 @@ ul>li {
     padding: 5px;
     font-size: 20px;
 }
+.mobilelogo {
+    justify-content: center;
+    
+}
 
 .header{
     position: sticky;
@@ -197,9 +158,9 @@ ul>li {
     max-height: 70px;
   
 }
-.log {
-    order: 0;
-    margin: 5px;
+#logo {
+    width: 200px;
+    padding: none;
 }
 /* Menu Icon */
 .hamb{
@@ -254,7 +215,70 @@ ul>li {
     top:0;
 }
 /* Responsiveness */
-@media (min-width: 768px) {
+/* desktop 
+min-width 780 */
+@media (min-width) {
+    
+}
+
+/* tablet
+max-width: 780 
+min-width: 381
+*/
+
+/* mobile
+max-width: 380 */
+
+/* 
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 1502px) {
+    .lastpic {
+        flex-grow: 1 auto;
+        width: auto;
+    }
+
+}
+@media (max-width:1516px) {
+    .container {
+        flex-shrink: 4;
+        width: 100%;
+    }
+     .container {
+            background-color: #f8dce2;
+            height: fit-content;
+            border: solid 1px  #ffff;
+        }
+}
+@media (max-width: 800px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .herotext {
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    .herop {
+       padding-left: 23px;
+      
+    }
+
+}
+@media (max-width: 916px) {
+    .container {
+        background-color: white;
+    } 
+    
+ } */
+/* @media (min-width: 768px) {
     .nav{
         max-height: none;
     }
@@ -287,8 +311,25 @@ ul>li {
     .logo_area {
       display: none;
     }
-    .log {
+    #logo {
         order: -1;
     }
+ 
+
+    
     
 }
+@media (max-width: 2200px) {
+    .container {
+        background-color: #f8dce2;
+    }
+    /* .mobilelogo {
+        display: none;
+    } */
+/* }
+@media (max-width: 894px) {
+    .container {
+        background-color: #ffff;
+    }
+    
+}  */
