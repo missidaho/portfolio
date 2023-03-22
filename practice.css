@@ -160,10 +160,14 @@ ul>li {
     justify-content: center;
     align-content: center;
 }
-.menu li a:hover{
+.menu ul a:hover{
     background-color:  rgb(221, 249, 251);
     border-radius: 20px;
     padding: 8px;
+    color: #ffa6b9;
+}
+.nav menu ul li a:hover {
+    
 }
 .nav{
     max-height: 70px;
