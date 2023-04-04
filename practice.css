@@ -50,6 +50,7 @@ body {
     border-radius: 20px;
     padding: 8px;
 }
+
 .footer {
     display: block;
     background-color: rgb(223, 247, 247);
@@ -117,7 +118,10 @@ body {
     align-content: space-between;
     justify-content: center;
     margin: 0;
-    margin-top: 0%;   
+    margin-top: 0%;
+    height: 80%;
+    background-color: rgb(221, 249, 251);
+    overflow: hidden;   
  }
 
 a{
@@ -147,28 +151,21 @@ ul>li {
     top: 0;
     width: 100%;
 }
-.nav{
-    height: 80%;
-    background-color: rgb(221, 249, 251);
-    overflow: hidden;
+
+.linknav a:hover {
+    background-color: #ffeef1;
+    border-radius: 25px;
+    padding: 10px;
 
 }
 .menu {
     display: flex;
-    padding: 30px;
+    padding: 25px;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 }
-.menu ul a:hover{
-    background-color:  rgb(221, 249, 251);
-    border-radius: 20px;
-    padding: 8px;
-    color: #ffa6b9;
-}
-.nav menu ul li a:hover {
-    
-}
+
 .nav{
     max-height: 70px;
   
@@ -218,6 +215,9 @@ ul>li {
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
+.side-menu:checked ~ .nav > .menu {
+    visibility: visible;
+}
 .side-menu:checked ~ .hamb .hamb-line {
     background: solid plum;
 }
@@ -262,11 +262,9 @@ max-width: 380 */
     .container {
         flex-shrink: 4;
         width: 100%;
-    }
-     .container {
-            background-color: #f8dce2;
-            height: fit-content;
-            border: solid 1px  #ffff;
+        background-color: #f8dce2;
+        height: fit-content;
+        border: solid 1px  #ffff;
         }
 }
 @media (max-width: 800px) {
@@ -329,6 +327,10 @@ max-width: 380 */
     #logo {
         order: -1;
     }
+    .nav .menu {
+        visibility: hidden;
+    }
+    
  
 
     
@@ -345,7 +347,7 @@ max-width: 380 */
         width: 300px;
     }
 }
-@media (max-width: 894px) {
+@media (min-width: 894px) {
     .container {
         background-color: #ffff;
     }
