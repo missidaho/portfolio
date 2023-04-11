@@ -171,12 +171,12 @@ ul>li {
   
 }
 #logo {
-   
+    width: 200px;
     padding: none;
 }
 
 #logo img {
-    width: 200px;
+   
 }
 /* Menu Icon */
 .hamb{
