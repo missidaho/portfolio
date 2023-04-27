@@ -292,8 +292,16 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 } 
-
-
+var btn=document.getElementsByClassName ('dots');
+var dots={
+  name: "carouselbtn",
+  Clicked: function () {
+    return 'Clicked' + this.name;
+  }
+}
+btn.addEventListener ('click', function () {
+  dataLayer.push ({events: dots.Clicked ()})
+});
     </script>
 
 
