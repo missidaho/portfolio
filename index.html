@@ -271,6 +271,7 @@
       // forward/Back controls
       function plusSlides(n) {
         SlideShow(slidePosition += n);
+        dataLayer.push({events: 'carousel ' + slidePosition});
       }
 
       //  images controls
@@ -294,10 +295,6 @@
         slides[slidePosition-1].style.display = "block";
         circles[slidePosition-1].className += " enable";
       } 
-
-      circles.addEventListener('click', function () {
-        dataLayer.push({events: 'carouselbtn'})
-      });
     </script>
 
 
