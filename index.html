@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9ZHFM0KD0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9ZHFM0KD0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-L9ZHFM0KD0');
-  </script>
+      gtag('config', 'G-L9ZHFM0KD0');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -265,44 +265,39 @@
       </div>
       </footer>
     <script>
-var slidePosition = 1;
-SlideShow(slidePosition);
+      var slidePosition = 1;
+      SlideShow(slidePosition);
 
-// forward/Back controls
-function plusSlides(n) {
-  SlideShow(slidePosition += n);
-}
+      // forward/Back controls
+      function plusSlides(n) {
+        SlideShow(slidePosition += n);
+      }
 
-//  images controls
-function currentSlide(n) {
-  SlideShow(slidePosition = n);
-}
+      //  images controls
+      function currentSlide(n) {
+        SlideShow(slidePosition = n);
+      }
 
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("Containers");
-  var circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-      circles[i].className = circles[i].className.replace(" enable", "");
-  }
-  slides[slidePosition-1].style.display = "block";
-  circles[slidePosition-1].className += " enable";
-} 
-var btn=document.getElementsByClassName ('dots');
-var dots={
-  name: "carouselbtn",
-  Clicked: function () {
-    return 'Clicked' + this.name;
-  }
-}
-btn.addEventListener ('click', function () {
-  dataLayer.push ({events: dots.Clicked ()})
-});
+      function SlideShow(n) {
+        var i;
+        var slides = document.getElementsByClassName("Containers");
+        var circles = document.getElementsByClassName("dots");
+        
+        if (n > slides.length) {slidePosition = 1}
+        if (n < 1) {slidePosition = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < circles.length; i++) {
+            circles[i].className = circles[i].className.replace(" enable", "");
+        }
+        slides[slidePosition-1].style.display = "block";
+        circles[slidePosition-1].className += " enable";
+      } 
+
+      circles.addEventListener('click', function () {
+        dataLayer.push({events: 'carouselbtn'})
+      });
     </script>
 
 
